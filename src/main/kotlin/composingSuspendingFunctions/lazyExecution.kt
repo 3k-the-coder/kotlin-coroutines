@@ -9,7 +9,7 @@ import kotlinx.coroutines.runBlocking
 // we can execute the coroutine only when it is being used in the application by lazily executing
 
 fun main() = runBlocking {
-    println("In main start ${Thread.currentThread().name}")
+    println("In coroutineScope.main start ${Thread.currentThread().name}")
 
         val msgOne = async(start = CoroutineStart.LAZY) { getMsgOne() }
         val msgTwo = async(start = CoroutineStart.LAZY) { getMsgTwo() }
@@ -19,7 +19,7 @@ fun main() = runBlocking {
 
 
 
-    println("In main end ${Thread.currentThread().name}")
+    println("In coroutineScope.main end ${Thread.currentThread().name}")
 }
 
 suspend fun getMsgOne(): String {

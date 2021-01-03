@@ -4,7 +4,7 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlin.concurrent.thread
 
-// coroutines.main thread and the background threads work independently
+// coroutines.coroutineScope.main thread and the background threads work independently
 // application will be closed only after all the background threads have completed their execution
 
 // but in case of coroutines, the application by default will not wait for a coroutine to finish its execution

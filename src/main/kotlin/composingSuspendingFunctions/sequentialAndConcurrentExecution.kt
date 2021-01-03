@@ -12,7 +12,7 @@ import kotlin.system.measureTimeMillis
 // launch will also make the code execute concurrently but it can't return values
 
 fun main() = runBlocking {
-    println("In main start ${Thread.currentThread().name}")
+    println("In coroutineScope.main start ${Thread.currentThread().name}")
 
     val sequencialTime  = measureTimeMillis {
         val msgOne = getMessageOne()
@@ -33,7 +33,7 @@ fun main() = runBlocking {
 
 
 
-    println("In main end ${Thread.currentThread().name}")
+    println("In coroutineScope.main end ${Thread.currentThread().name}")
 }
 
 suspend fun getMessageOne(): String {

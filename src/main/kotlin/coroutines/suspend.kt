@@ -19,12 +19,12 @@ fun  main() {
         println("Coroutine Fake work end ${Thread.currentThread().name}")
     }
 
-    runBlocking {  // creates a coroutine that blocks the current main thread
+    runBlocking {  // creates a coroutine that blocks the current coroutineScope.main thread
         delay(1000) // waits for coroutine to finish
     }
 
 
-    println("In main")
+    println("In coroutineScope.main")
 
 
 
