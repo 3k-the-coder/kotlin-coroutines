@@ -5,7 +5,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
-// a function with "suspend" modifier is called suspending functions
+// a function with "suspend" modifier is called suspending function
 
 // suspending functions are only allowed to be called from a coroutine or from another suspending function
 
